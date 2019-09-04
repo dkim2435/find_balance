@@ -22,6 +22,9 @@ const AddTransaction = () => (
       <Form.Field label='Enter Amount ($)' control='input' />
     </Form.Group>
     <Form.Field label='Description' control='textarea' rows='3' />
+    <Form.Group widths='equal'>
+      <Form.Field label='Enter the date (mm/dd/yyyy)' control='input' />
+    </Form.Group>
     <Button>Add</Button>
   </Form>
 )

@@ -7,8 +7,6 @@ import {
   Grid,
   Header,
   Icon,
-  Image,
-  List,
   Menu,
   Responsive,
   Segment,
@@ -54,8 +52,8 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button primary size='huge'>
-      About Us
-      <Icon name='right arrow' />
+      $ 0.00
+      {/* <Icon name='right arrow' /> */}
     </Button>
   </Container>
 )
@@ -100,7 +98,7 @@ class DesktopContainer extends Component {
             >
               <Container>
                 <Menu.Item as='a' active>
-                  Home
+                  Find Balance
                 </Menu.Item>
                 {/* <Menu.Item as='a'>Work</Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
@@ -158,7 +156,7 @@ class MobileContainer extends Component {
           visible={sidebarOpened}
         >
           <Menu.Item as='a' active>
-            Home
+            Find Balance
           </Menu.Item>
           {/* <Menu.Item as='a'>Work</Menu.Item>
           <Menu.Item as='a'>Company</Menu.Item>
@@ -226,7 +224,7 @@ const Layout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              This Section will have Line Chart that compares monthly budget
+              This Section will have Line Chart that compares each month's overall budget
             </Header>
             {/* <p style={{ fontSize: '1.33em' }}>
               We can give your company superpowers to do things that they never thought possible.
