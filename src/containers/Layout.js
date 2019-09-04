@@ -15,6 +15,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import AddTransaction from '../components/AddTransaction'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -240,7 +241,7 @@ const Layout = () => (
             </p> */}
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            Something here.
+            Maybe if I have time, Pie chart can go in here
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -274,23 +275,25 @@ const Layout = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
-          This section will have a form to add income
+          Log your Transaction here:
         </Header>
-        <p style={{ fontSize: '1.33em' }}>
+        <Divider></Divider>
+        {/* <p style={{ fontSize: '1.33em' }}>
           Form Here
-        </p>
-        <Button as='a' size='large'>
+        </p> */}
+        <AddTransaction />
+        {/* <Button as='a' size='large'>
           Add Income
-        </Button>
-        <Divider
+        </Button> */}
+        {/* <Divider
           as='h4'
           className='header'
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
           <a href='#'>Case Studies</a>
-        </Divider>
-        <Header as='h3' style={{ fontSize: '2em' }}>
+        </Divider> */}
+        {/* <Header as='h3' style={{ fontSize: '2em' }}>
           This section will have a form to add expense
         </Header>
         <p style={{ fontSize: '1.33em' }}>
@@ -298,7 +301,7 @@ const Layout = () => (
         </p>
         <Button as='a' size='large'>
           Add Expense
-        </Button>
+        </Button> */}
       </Container>
     </Segment>
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
